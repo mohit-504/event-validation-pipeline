@@ -27,7 +27,7 @@ public class DefaultEventGenerator implements EventGenerator {
                                                 .payload("payload-" + i)
                                                 .build()
                         )
-                        .collect(Collectors.toList());
+                        .toList();
                                             
     }
     

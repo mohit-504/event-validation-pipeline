@@ -10,6 +10,8 @@ import project.generate.DefaultEventGenerator;
 import project.generate.EventGenerator;
 import project.model.Event;
 import project.model.EventType;
+import project.route.DefaultEventRouter;
+import project.route.EventRouter;
 import project.transform.EventTransformer;
 import project.validate.DefaultEventValidator;
 import project.validate.EventValidator;
@@ -19,7 +21,8 @@ public class Main {
         // milestone1();
         // milestone2();
         // milestone3();
-        milestone4();
+        // milestone4();
+        milestone5();
     }
 
     public static void milestone1(){
@@ -92,6 +95,17 @@ public class Main {
         Event upperCaseEvent =  upperCaseTransformer.transform(trimmedEvent);
 
         System.out.println(upperCaseEvent);
+    }
 
+    public static void milestone5() throws InvalidEventException{
+        EventGenerator generator = new DefaultEventGenerator();
+        EventRouter router = new DefaultEventRouter();
+
+        List<Event> events = generator.generateEvents(15);
+        System.out.println(events.size());
+
+        for(Event e : events){
+            System.out.println(router.route(e));
+        }
     }
 }

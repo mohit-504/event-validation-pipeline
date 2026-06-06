@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 // import lombok.Getter;
 
 @Data
-@Builder
+@Builder(toBuilder = true)
 @NoArgsConstructor
 @AllArgsConstructor
 public class Event {

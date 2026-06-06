@@ -1,6 +1,6 @@
 // DefaultEventGenerator.java
 
-package project.generator;
+package project.generate;
 
 import java.util.List;
 import java.util.Random;

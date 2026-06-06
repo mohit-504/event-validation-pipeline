@@ -6,13 +6,13 @@ import java.util.List;
 
 import project.exception.InvalidEventException;
 import project.exception.MissingFieldException;
-import project.generator.DefaultEventGenerator;
-import project.generator.EventGenerator;
+import project.generate.DefaultEventGenerator;
+import project.generate.EventGenerator;
 import project.model.Event;
 import project.model.EventType;
 import project.transform.EventTransformer;
-import project.validator.DefaultEventValidator;
-import project.validator.EventValidator;
+import project.validate.DefaultEventValidator;
+import project.validate.EventValidator;
 
 public class Main {
     public static void main(String[] args) throws MissingFieldException, InvalidEventException{

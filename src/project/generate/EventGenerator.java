@@ -1,6 +1,6 @@
 // EventGenerator.java
 
-package project.generator;
+package project.generate;
 
 import java.util.List;
 

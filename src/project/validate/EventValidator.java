@@ -1,6 +1,6 @@
 // EventValidator.java
 
-package project.validator;
+package project.validate;
 
 import project.exception.InvalidEventException;
 import project.exception.MissingFieldException;

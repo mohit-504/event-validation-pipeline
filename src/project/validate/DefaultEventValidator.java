@@ -1,6 +1,6 @@
 // DefaultEventValidator.java
 
-package project.validator;
+package project.validate;
 
 // import java.util.Arrays;
 
